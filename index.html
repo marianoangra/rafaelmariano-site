@@ -61,17 +61,6 @@ header .btn{min-height:2.6rem;padding:.4rem 1.1rem;font-size:.9rem;color:#000}
 .deliver div{background:var(--panel2);border-radius:18px;padding:1.2rem 1.3rem;border-left:4px solid var(--lime)}
 .deliver p{color:var(--mute);margin-top:.2rem;font-size:1rem}
 @media(min-width:760px){.deliver{grid-template-columns:repeat(3,1fr)}}
-.tiers{display:grid;gap:1rem;margin-top:2rem}
-.tier{display:flex;flex-direction:column;background:var(--panel2);border:1.5px solid var(--line);border-radius:22px;padding:1.5rem 1.3rem}
-.tier.top{border-color:var(--lime)}
-.tier .tag{align-self:flex-start;background:var(--lime);color:#000;font:600 .8rem Poppins,sans-serif;padding:.25rem .7rem;border-radius:999px;margin-bottom:.8rem}
-.tier .price{font:800 2.2rem/1.1 Poppins,sans-serif;margin:.5rem 0 .2rem}
-.tier .price small{font:500 1rem "DM Sans",sans-serif;color:var(--mute)}
-.tier ul{list-style:none;padding:0;margin:1rem 0 1.4rem;display:grid;gap:.55rem;color:var(--mute);font-size:1rem}
-.tier li{padding-left:1.5rem;position:relative}
-.tier li::before{content:"✓";position:absolute;left:0;color:var(--lime);font-weight:700}
-.tier .btn{margin-top:auto;width:100%}
-@media(min-width:860px){.tiers{grid-template-columns:repeat(3,1fr);align-items:stretch}}
 .stats{display:grid;gap:.8rem;margin-top:1.6rem}
 .stats div{background:var(--panel);border-radius:18px;padding:1.1rem 1.2rem}
 .stats b{display:block;font:800 1.9rem/1.1 Poppins,sans-serif;color:var(--lime)}
@@ -119,7 +108,7 @@ dialog img{max-height:90vh;border-radius:14px}
 <header><div class="wrap">
   <a class="logo" href="#">Rafael Mariano</a>
   <nav>
-    <a href="#como">Como funciona</a><a href="#receba">Planos</a><a href="#sobre">Sobre</a><a href="#mais">Palestras e parceiros</a>
+    <a href="#como">Como funciona</a><a href="#receba">O que você recebe</a><a href="#sobre">Sobre</a><a href="#mais">Palestras e parceiros</a>
     <a class="btn" data-contact href="#contato">Quero minha entrevista</a>
   </nav>
 </div></header>
@@ -148,43 +137,9 @@ dialog img{max-height:90vh;border-radius:14px}
 </div></section>
 
 <section class="plans" id="receba"><div class="wrap">
-  <h2>Escolha o seu plano</h2>
-  <p class="lead">Uma entrevista resolve um lançamento. Uma por mês constrói presença. Escolha o ritmo e me chame no WhatsApp.</p>
-  <div class="tiers">
-    <div class="tier">
-      <h3>Entrevista avulsa</h3>
-      <p class="price">R$ 500</p>
-      <ul>
-        <li>1 entrevista gravada</li>
-        <li>Publicação em Collab no @rafaelmariano</li>
-        <li>Vídeo final para você usar onde quiser</li>
-      </ul>
-      <a class="btn" data-plan="Entrevista avulsa (R$ 500)" href="#contato"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm-3 6.5h6a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm0 4h4a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2z" fill-rule="evenodd"/></svg>Quero a avulsa</a>
-    </div>
-    <div class="tier top">
-      <span class="tag">Recomendado</span>
-      <h3>Presença mensal</h3>
-      <p class="price">R$ 1.500 <small>/mês</small></p>
-      <ul>
-        <li>1 entrevista por mês</li>
-        <li>4 cortes prontos para postar</li>
-        <li>Publicação em Collab no @rafaelmariano</li>
-        <li>Pauta do mês definida comigo</li>
-      </ul>
-      <a class="btn" data-plan="Presença mensal (R$ 1.500/mês)" href="#contato"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm-3 6.5h6a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm0 4h4a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2z" fill-rule="evenodd"/></svg>Quero o mensal</a>
-    </div>
-    <div class="tier">
-      <h3>Presença em dobro</h3>
-      <p class="price">R$ 2.500 <small>/mês</small></p>
-      <ul>
-        <li>2 entrevistas por mês</li>
-        <li>8 cortes prontos para postar</li>
-        <li>Publicação em Collab no @rafaelmariano</li>
-        <li>Prioridade na agenda de gravação</li>
-      </ul>
-      <a class="btn" data-plan="Presença em dobro (R$ 2.500/mês)" href="#contato"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm-3 6.5h6a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm0 4h4a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2z" fill-rule="evenodd"/></svg>Quero em dobro</a>
-    </div>
-  </div>
+  <h2>Uma proposta para cada marca</h2>
+  <p class="lead">Cada entrevista é montada sob medida. Me chame no WhatsApp, conte sobre o seu momento e eu envio os formatos e valores que fazem sentido para você.</p>
+  <p style="margin-top:1.6rem"><a class="btn" data-contact href="#contato"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm-3 6.5h6a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm0 4h4a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2z" fill-rule="evenodd"/></svg>Receber minha proposta</a></p>
   <div class="deliver">
     <div><h3>Você aparece para quem ainda não te conhece</h3><p>O vídeo entra no meu perfil e no seu, em Collab.</p></div>
     <div><h3>Conteúdo que continua trabalhando</h3><p>O material é seu: use no site, em anúncios e no WhatsApp.</p></div>
@@ -271,14 +226,11 @@ dialog img{max-height:90vh;border-radius:14px}
 <dialog id="lb"><img id="lbi" alt=""></dialog>
 <script>
 // Edite aqui: contato e links de afiliado
-const WA="https://wa.me/5511959278919?text=";
 const CONFIG={
-  contact:WA+encodeURIComponent("Olá, Rafael! Vim pelo seu site e quero saber mais sobre a entrevista estratégica."),
-  plan:p=>WA+encodeURIComponent("Olá, Rafael! Vim pelo seu site e quero o plano "+p+"."),
+  contact:"https://wa.me/5511959278919?text="+encodeURIComponent("Olá, Rafael! Vim pelo seu site e quero saber mais sobre a entrevista estratégica."),
   aff:{hubia:"https://ai.hub.xyz/r/MOBILE", whatnot:"https://whatnot.com/invite/rafaelmariano", redotpay:"https://url.hk/i/pt/g8a1p", bingx:"https://bingx.com/partner/rafaelmarianobr"}
 };
 document.querySelectorAll("[data-contact]").forEach(a=>{a.href=CONFIG.contact;a.target="_blank";a.rel="noopener"});
-document.querySelectorAll("[data-plan]").forEach(a=>{a.href=CONFIG.plan(a.dataset.plan);a.target="_blank";a.rel="noopener"});
 document.querySelectorAll("[data-aff]").forEach(a=>{a.href=CONFIG.aff[a.dataset.aff];a.target="_blank";a.rel="sponsored noopener"});
 document.getElementById("y").textContent=new Date().getFullYear();
 const dock=document.getElementById("dock");let vis={h:true,f:false};
